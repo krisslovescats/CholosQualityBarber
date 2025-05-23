@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cholos Quality Barber - Barbería Premium</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&family=Open+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>Cholos Quality Barber</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Inicio</a></li>
+                    <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                    <li><a href="paquetes.html" class="nav-link">Paquetes</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Bienvenido a Cholos Quality Barber</h1>
+                <p class="hero-subtitle">Tu barbería de confianza para cortes de alta calidad y estilo único</p>
+                <div class="hero-buttons">
+                    <a href="paquetes.html" class="btn btn-primary">Ver Paquetes</a>
+                    <a href="contacto.html" class="btn btn-secondary">Reservar Cita</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="Imagenes/123552336_1123035754778161_2507354561398574374_n-removebg-preview.png" alt="Interior de Cholos Quality Barber">
+            </div>
+        </section>
+
+        <!-- Servicios Destacados -->
+        <section class="featured-services">
+            <div class="container">
+                <h2 class="section-title">Nuestros Servicios Principales</h2>
+                <div class="services-grid">
+                    <div class="service-card animate-on-scroll">
+                
+                        <h3>Cortes Profesionales</h3>
+                        <p>Cortes modernos y clásicos adaptados a tu estilo personal</p>
+                        <img src="Imagenes/314774908_125383773678873_8559345472176969528_n.jpg" alt="Cortes Profesionales">
+                    </div>
+                    <div class="service-card animate-on-scroll">
+                        <h3>Afeitado Premium</h3>
+                        <p>Afeitado tradicional con navaja y productos de alta calidad</p>
+                        <img src="Imagenes/101037662_947831355672513_2644044546153317221_n.jpg" alt="Afeitado Premium">
+                    </div>
+                    <div class="service-card animate-on-scroll">
+                        
+                        <h3>Arreglo de Barba</h3>
+                        <p>Diseño y cuidado profesional de barba y bigote</p>
+                        <img src="Imagenes/Imagen de WhatsApp 2025-05-22 a las 18.34.38_2f71d917.jpg" alt="Arreglo de Barba">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galería de Estilos -->
+        <section class="gallery-section">
+            <div class="container">
+                <h2 class="section-title">Galería de Estilos</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="Imagenes/148079173_256544372630576_1761928606556987898_n.jpg" alt="Estilo Clásico">
+                        <div class="gallery-overlay">
+                            <h3>Estilos Clásicos</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Imagenes/481180805_17897406690112959_8257893184471177164_n.jpg" alt="Estilo Moderno">
+                        <div class="gallery-overlay">
+                            <h3>Estilos Modernos</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Imagenes/120295371_825970938147046_6733568441487129087_n.jpg" alt="Barbas Estilizadas">
+                        <div class="gallery-overlay">
+                            <h3>Barbas Estilizadas</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario de Cotización -->
+        <section class="cotizacion-section">
+            <div class="container">
+                <h2 class="section-title">Cotizador de Servicios</h2>
+                <form id="cotizadorForm" class="cotizador-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="correo">Correo Electrónico:</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="servicio">Selecciona el Servicio:</label>
+                        <select id="servicio" name="servicio" required>
+                            <option value="">-- Elige un servicio --</option>
+                            <option value="corte">Corte de Cabello</option>
+                            <option value="afeitado">Afeitado Premium</option>
+                            <option value="barba">Arreglo de Barba</option>
+                            <option value="completo">Servicio Completo</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Obtener Cotización</button>
+                </form>
+
+                <div id="resultado-cotizacion" class="resultado-cotizacion"></div>
+            </div>
+        </section>
+
+        <!-- Promociones -->
+        <section class="promotions">
+            <div class="container">
+                <h2 class="section-title">Ofertas Especiales</h2>
+                <div class="promo-cards">
+                    <div class="promo-card animate-on-scroll">
+                        <h3>Combo Completo</h3>
+                        <p>Corte + Barba + Afeitado</p>
+                        <div class="price">
+                            <span class="old-price">₡25,000</span>
+                            <span class="new-price">₡20,000</span>
+                        </div>
+                    </div>
+                    <div class="promo-card animate-on-scroll">
+                        <h3>Primera Visita</h3>
+                        <p>15% de descuento en tu primer servicio</p>
+                        <div class="price">
+                            <span class="discount">15% OFF</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Itinerario Dinámico -->
+        <section class="itinerario-section">
+            <div class="container">
+                <h2 class="section-title">Proceso de Atención</h2>
+                <div id="itinerario-lista" class="itinerario-lista"></div>
+                <button id="generar-itinerario" class="btn btn-secondary">Mostrar Proceso</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Cholos Quality Barber</h3>
+                    <p>Tu barbería de confianza para cortes de alta calidad y experiencia única.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="paquetes.html">Paquetes</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>+506 2234-5678</p>
+                    <p>info@cholosqualitybarber.com</p>
+                    <p>San José, Costa Rica</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Horarios</h4>
+                    <p>Lun - Vie: 8:00 AM - 7:00 PM</p>
+                    <p>Sábado: 8:00 AM - 6:00 PM</p>
+                    <p>Domingo: 9:00 AM - 4:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cholos Quality Barber. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
